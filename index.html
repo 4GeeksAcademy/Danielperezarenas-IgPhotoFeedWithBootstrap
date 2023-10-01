@@ -20,9 +20,9 @@
 
 <body>
     <nav class="navbar bg-light">
-        <div class="containter-fluid d-flex" style="width: 100%;">
-            <span class="navbar-brand p-2">
-                <i class="fa-brands fa-instagram pe-1"></i>Instagram
+        <div class="containter d-flex" style="width: 100%;">
+            <span class="navbar-brand p-2" style="font-weight: 600;">
+                <i class="fa-brands fa-instagram pe-1 fs-4"></i>Instagram
             </span>
             <div class="d-flex justify-content-end collapse navbar-collapse me-2">
                 <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#modalCreateNewPost">
@@ -41,14 +41,16 @@
                                 <h6>Caption:</h6>
                                 <textarea type="text" class="form-control"
                                     placeholder="Add the caption of your post here"></textarea>
-                                <i class="fa-solid fa-camera btn btn-outline-light m-2"
-                                        style="color: #000000; border-color: lightgray;"></i><i
-                                        class="fa-solid fa-location-dot btn btn-outline-light"
-                                        style="color: #000000; border-color: lightgray;"></i>
+                                <div class="mt-2">
+                                    <i class="fa-solid fa-camera btn bg-light me-2"
+                                        style="border-color: lightgray; line-height: 1.25; width: 40px;"></i><i
+                                        class="fa-solid fa-location-dot btn bg-light"
+                                        style="border-color: lightgray; line-height: 1.25; width: 40px;"></i>
+                                </div>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Publish</button>
+                                <button type="button" class="btn btn-success">Publish</button>
                             </div>
                         </div>
                     </div>
@@ -72,6 +74,7 @@
 
         </div>
     </nav>
+
 </body>
 
 </html>
