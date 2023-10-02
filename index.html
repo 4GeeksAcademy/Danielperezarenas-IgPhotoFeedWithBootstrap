@@ -39,7 +39,7 @@
                             </div>
                             <div class="modal-body">
                                 <h6>Caption:</h6>
-                                <textarea type="text" class="form-control"
+                                <textarea type="text" class="form-control" id="modalCaption"
                                     placeholder="Add the caption of your post here"></textarea>
                                 <div class="mt-2">
                                     <i class="fa-solid fa-camera btn bg-light me-2"
@@ -70,9 +70,113 @@
                         <li><a class="dropdown-item" style="color: red;">Log out</a></li>
                     </ul>
                 </div>
-            </div>            
+            </div>
         </div>
     </nav>
+    <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist" style="border: none">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+                role="tab" aria-controls="home-tab-pane" aria-selected="true" style="border: none">
+                <i class="fa-solid fa-table-cells"></i>
+            </a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="feed-tab" data-bs-toggle="tab" data-bs-target="#feed-tab-pane" type="button"
+                role="tab" aria-controls="feed-tab-pane" aria-selected="true" style="border: none">
+                <i class="fa-solid fa-square"></i>
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="nav-link container-fluid" style="width: 1050px">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+                        <img style="object-fit: cover; width: 350px; height: 350px;"
+                            src="https://images.ecestaticos.com/K-H13opp5EdmIWo61v0sXMfywco=/0x87:2155x1283/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F8ec%2F08c%2F85c%2F8ec08c85c866ccb70c4f1c36492d890f.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+                        <img style="object-fit: cover; width: 350px; height: 350px"
+                            src="https://portaleduca.cl/wp-content/uploads/2023/07/Lanzan-programa-escolar-de-especializacion-digital-que-permitira-a-estudiantes-aprender-programacion-y-desarrollar-habilidades-tecnologicas.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+                        <img style="object-fit: cover; width: 350px; height: 350px"
+                            src="https://i.pinimg.com/736x/4d/f6/8a/4df68ae75170228be25f965283acc98b.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+                        <img style="object-fit: cover; width: 350px; height: 350px"
+                            src="https://cdn-wp.thesportsrush.com/2019/05/GettyImages-1140603868.jpg?w=1920&q=60">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+                        <img style="object-fit: cover; width: 350px; height: 350px"
+                            src="https://i.pinimg.com/originals/6b/24/4d/6b244d86eab402360b81015c520e4212.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+                        <img style="object-fit: cover; width: 350px; height: 350px"
+                            src="https://cms.guggenheim-bilbao.eus/uploads/2022/12/obras-maestras-de-la-coleccion.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+                        <img style="object-fit: cover; width: 350px; height: 350px" src="https://picsum.photos/500/500">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+                        <img style="object-fit: cover; width: 350px; height: 350px"
+                            src="https://picsum.photos/500/500?random=8">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 p-1">
+                        <img style="object-fit: cover; width: 350px; height: 350px"
+                            src="https://picsum.photos/500/500?random=9">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" style="height: 200px;" id="feed-tab-pane" role="tabpanel"
+            aria-labelledby="feed-tab" tabindex="0">
+            <div class="nav-link m-auto container" style="width: 600px">
+                <div class="card mb-4">
+                    <div class="card-top d-flex">
+                        <h4 class="card-text p-2" style="width: 50%;">My crazy dog Spark!</h4>
+                        <h6 class="text-end p-2" style="width: 50%;">08/26</h6>
+                    </div>
+                    <div class="card-image"></div>
+                    <img src="https://images.ecestaticos.com/K-H13opp5EdmIWo61v0sXMfywco=/0x87:2155x1283/557x418/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2F8ec%2F08c%2F85c%2F8ec08c85c866ccb70c4f1c36492d890f.jpg"
+                        class="card-image" alt="Doggy">
+                    <div class="card-image bg-none p-2">
+                        <p class="card-text mb-0"><strong>204 Likes</strong></p>
+                        <p>This is an example of a very good photo that you can post on instagram</p>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <div class="card-top d-flex">
+                        <h4 class="card-text p-2" style="width: 50%;">Bodyboarding</h4>
+                        <h6 class="text-end p-2" style="width: 50%;">04/09</h6>
+                    </div>
+                    <div class="card-image"></div>
+                    <img src="https://i.pinimg.com/736x/4d/f6/8a/4df68ae75170228be25f965283acc98b.jpg"
+                        class="card-image" alt="Doggy">
+                    <div class="card-image bg-none p-2">
+                        <p class="card-text mb-0"><strong>26985 Likes</strong></p>
+                        <p>This is an example of a very good photo that you can post on instagram</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-top d-flex">
+                        <h4 class="card-text p-2" style="width: 50%;">Programming</h4>
+                        <h6 class="text-end p-2" style="width: 50%;">06/10</h6>
+                    </div>
+                    <div class="card-image"></div>
+                    <img src="https://portaleduca.cl/wp-content/uploads/2023/07/Lanzan-programa-escolar-de-especializacion-digital-que-permitira-a-estudiantes-aprender-programacion-y-desarrollar-habilidades-tecnologicas.jpg"
+                        class="card-image" alt="Doggy">
+                    <div class="card-image bg-none p-2">
+                        <p class="card-text mb-0"><strong>204 Likes</strong></p>
+                        <p>This is an example of a very good photo that you can post on instagram</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
